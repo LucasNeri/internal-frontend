@@ -14,17 +14,23 @@ export const theme = extendTheme({
           "100": "#D1D2DC",
           "50": "#EEEEF2",
           "25": "#F8F8FB"
+        },
+        blue: {
+            "900": "#011032",
+        },
+        white: {
+            "900": "#FFFFFF"
         }
     },
     fonts: {
-        heading: 'Inter',
-        body: 'Inter'
+        heading: 'Inter, sans-serif',
+        body: 'Inter, sans-serif',
     },
     styles: {
         global: {
             body: {
-                bg: 'gray.25',
-                color: 'gray.50'
+                bg: 'gray.50',
+                color: 'blue.900'
             }
         }
     }
