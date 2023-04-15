@@ -1,5 +1,14 @@
 import { Button, Flex, Stack, Text  } from '@chakra-ui/react'
-import { Input } from '@components/Form/Input'
+import { Input } from '../components/Form/Input'
+
+
+import logo from '../assets/logos/estrela.png'
+
+function test ( array : Array<string>) {
+  const newArray = array.map((item) => {
+    return item
+  })
+}
 
 export default function Home() {
   return (
@@ -20,7 +29,9 @@ export default function Home() {
         flexDir="column"
       >
         <Flex justifyContent='center' alignItems='flex-end'>
-          <Text fontSize={23} lineHeight='26px'  fontWeight={900}> LOGO </Text>
+          <Text fontSize={23} lineHeight='26px'  fontWeight={900}> ESTRELA </Text>
+          <img src={logo.src} alt='logo' width={37}/>
+          <Text fontSize={23} lineHeight='26px' fontWeight={900}> INTERNO </Text>
         </Flex>
 
         <Flex alignItems='center' justifyContent='center' mt={3} mb={8}>
